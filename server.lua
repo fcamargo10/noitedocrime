@@ -41,5 +41,12 @@ AddEventHandler('chatMessage', function(source, name, msg)
 		CancelEvent()
 		TriggerClientEvent("alert:Send", source, string.sub(msg, 15), Config.EAS.Departments)
 		end
+
+		if command == "/noitecrimefim" then
+			CancelEvent()
+			TriggerClientEvent("alert:fim", source)	
+		end
+
+
 	end
 end)

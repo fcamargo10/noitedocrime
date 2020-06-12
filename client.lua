@@ -1,7 +1,8 @@
 -- Clima que vc deseja
-weather = "HALLOWEEN"
+weatherTRETA = "HALLOWEEN"
+weatherPAZ = "EXTRASUNNY"
 -- Se deseja que fique sem ou com energia a cidade
-blackout = false
+blackout = true
 
 RegisterNetEvent("SendAlert")
 AddEventHandler("SendAlert", function(msg, msg2)
@@ -32,13 +33,31 @@ AddEventHandler("alert:Send", function(msg, departments)
                 TriggerServerEvent("alert:sv", msg, msg2)
                 -- SendAlert(msg, msg2)
                 NetworkOverrideClockTime(00, 00)
-                SetBlackout(true)
+                SetBlackout(blackout)
                 ClearOverrideWeather()
                 ClearWeatherTypePersist()
-                SetWeatherTypePersist(weather)
-                SetWeatherTypeNow(weather)
-                SetWeatherTypeNowPersist(weather)
+                SetWeatherTypePersist(weatherTRETA)
+                SetWeatherTypeNow(weatherTRETA)
+                SetWeatherTypeNowPersist(weatherTRETA)
             end
         end
     end
+end)
+
+RegisterNetEvent("alert:fim")
+AddEventHandler("alert:fim", function(msg, departments)
+    NetworkOverrideClockTime(00, 00)
+    SetBlackout(false)
+    ClearOverrideWeather()
+    ClearWeatherTypePersist()
+    SetWeatherTypePersist(weatherPAZ)
+    SetWeatherTypeNow(weatherPAZ)
+    SetWeatherTypeNowPersist(weatherPAZ)
+    SendNUIMessage({
+        type = "alert",
+        enable = false,
+        issuer = msg,
+        message = msg2,
+        volume = Config.EAS.Volume
+    })
 end)
