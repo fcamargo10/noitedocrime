@@ -4,7 +4,7 @@
 __________
 Clone o repositório na pasta ***resources***
 
-    https://github.com/vrsshelby/noitedocrime.git
+    git clone https://github.com/vrsshelby/noitedocrime.git
 
 ________________
 
