@@ -35,8 +35,14 @@ $(function () {
     window.addEventListener('message', function (event) {
         if (event.data.type == "alert") {
             $('.eventomsg').text(event.data.message);
-            document.body.style.display = event.data.enable ? "block" : "none";
-            alert(0.4)
+            if (event.data.enable) {
+                document.body.style.display = "block";
+                alert(0.4)
+            } else {
+                document.body.style.display = "none";
+                alert(0)
+            }
+
         }
     });
 });
