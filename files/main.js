@@ -1,8 +1,14 @@
 var snd = new Audio("alert.mp3");
 
-function alert(volume) {
+function alert(volume = 0.4, play = true) {
     snd.volume = volume;
-    snd.play();
+
+    if(play){
+        snd.play();
+    }else{
+        snd.load();
+    }
+    
     setTimeout(function () {
         snd.pause();
         snd.currentTime = 0;
@@ -40,7 +46,7 @@ $(function () {
                 alert(0.4)
             } else {
                 document.body.style.display = "none";
-                alert(0)
+                alert(0.4, false)
             }
 
         }
