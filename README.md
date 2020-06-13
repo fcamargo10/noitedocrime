@@ -2,7 +2,7 @@
 
 
 # Noite do crime
-**Script [standalone] para o Servidor Villa Lobos para noite do crime**
+**Script [standalone] para o Servidor Villa Lobos para noite do crime** <br>
 Funciona com **VRP**, **ESX** e **VRPEX**
 __________
 Clone o repositório na pasta ***resources*** ou baixe o ultimo [**release**](https://github.com/vrsshelby/noitedocrime/releases).
