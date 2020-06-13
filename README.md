@@ -1,5 +1,6 @@
 
 
+
 # Noite do crime
 **Script [standalone] para o Servidor Villa Lobos para noite do crime**
 Funciona com **VRP**, **ESX** e **VRPEX**
