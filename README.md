@@ -2,7 +2,7 @@
 
 
 # Noite sem regras
-**Script [standalone] para o Servidor Villa Lobos para noite do crime** <br>
+**Script [standalone] para o Servidor Villa Lobos para noite sem regras** <br>
 
 - Funciona com **VRP**, **ESX** e **VRPEX**.
 __________
