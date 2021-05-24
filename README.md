@@ -8,7 +8,7 @@
 __________
 Clone o repositório na pasta ***resources*** ou baixe o ultimo [**release**](https://github.com/vrsshelby/noitedocrime/releases).
 
-    git clone https://github.com/vrsshelby/noitedocrime.git
+    git clone https://github.com/fcamargo10/noitesemregras.git
 
 ________________
 
